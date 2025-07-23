@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Job Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="project-detail">
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+    <h1>Online Job Portal</h1>
+
+    <div class="slideshow-container">
+ 
+  <div class="slide fade">
+    <img src="Picture1.png" alt="Slide 1">
+  </div>
+ <div class="slide fade">
+    <img src="Picture2.png" alt="Slide 1">
+  </div>
+ <div class="slide fade">
+    <img src="Picture3.png" alt="Slide 1">
+  </div>
+ <div class="slide fade">
+    <img src="Picture4.png" alt="Slide 1">
+  </div>
+ <div class="slide fade">
+    <img src="Picture5.png" alt="Slide 1">
+  </div>
+ <div class="slide fade">
+    <img src="Picture6.png" alt="Slide 1">
+  </div>
+ <div class="slide fade">
+    <img src="Picture7.png" alt="Slide 1">
+  </div>
+ <div class="slide fade">
+    <img src="Picture8.png" alt="Slide 1">
+  </div>
+ <div class="slide fade">
+    <img src="Picture9.png" alt="Slide 1">
+  </div>
+ <div class="slide fade">
+    <img src="Picture10.png" alt="Slide 1">
+  </div>
+ <div class="slide fade">
+    <img src="Picture11.png" alt="Slide 1">
+  </div>
+ <div class="slide fade">
+    <img src="Picture12.png" alt="Slide 1">
+  </div>
+ <div class="slide fade">
+    <img src="Picture13.png" alt="Slide 1">
+  </div>
+ <div class="slide fade">
+    <img src="Picture14.png" alt="Slide 1">
+  </div>
+ <div class="slide fade">
+    <img src="Picture15.png" alt="Slide 1">
+  </div>
+ <div class="slide fade">
+    <img src="Picture16.png" alt="Slide 1">
+  </div>
+ <div class="slide fade">
+    <img src="Picture17.png " alt="Slide 1">
+  </div>
+ <div class="slide fade">
+    <img src="Picture18.png" alt="Slide 1">
+  </div>
+ <div class="slide fade">
+    <img src="Picture19.png" alt="Slide 1">
+  </div>
+  <div class="slide fade">
+    <img src="Picture20.png" alt="Slide 1">
+  </div>
+  <div class="slide fade">
+    <img src="Picture21.png" alt="Slide 1">
+  </div>
+ <div class="slide fade">
+    <img src="Picture22.png" alt="Slide 1">
+  </div>
+  <div class="slide fade">
+    <img src="Picture23.png" alt="Slide 1">
+  </div>
+  <div class="slide fade">
+    <img src="Picture24.png" alt="Slide 1">
+  </div>
+  
+
+  <a class="prev" onclick="changeSlide(-1)">❮</a>
+  <a class="next" onclick="changeSlide(1)">❯</a>
+
+</div>
+
+
+   <div class="project-description">
+      <p>
+    The Online Job Portal is a dynamic web-based application designed to simplify and automate the job recruitment process. It acts as an interactive platform connecting job seekers and employers, allowing users to register, manage profiles, search or post job openings, and streamline the entire hiring workflow. The system features three key modules: Job Seeker, Employer, and Admin, each tailored to handle distinct functionalities like job applications, candidate shortlisting, and administrative approvals.
+  </p>
+  </div><div class="project-description-tech">
+  <h0>Technologies Used:</h0>
+   <h1>Languages:</h1>
+    <h2><ul>
+      <li>HTML</li>
+      <li>MySQL</li>
+      <li>CSS</li>
+      <li>PHP</li>
+      <li>JavaScript</li>
+    </ul></h2>
+    <h1>Tools/Frameworks:</h1>
+    <h2><ul>
+      <li>XAMPP</li>
+      <li>Bootstrap</li>
+      <li>phpMyAdmin</li>
+    </ul></h2>
+  <h1>Team Members:</h1>
+    <h2>Ritu raj, Ankit raj, Shefna S
+    </h2>
+
+      </div>
+    <a href="https://github.com/Aryasreesunil/job-portal" target="_blank" class="btn">View on GitHub</a>
+  </section>
+
+
+  <script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".slide");
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      if (i === index) slide.classList.add("active");
+    });
+  }
+
+  function changeSlide(direction) {
+    currentSlide += direction;
+    if (currentSlide < 0) currentSlide = slides.length - 1;
+    if (currentSlide >= slides.length) currentSlide = 0;
+    showSlide(currentSlide);
+  }
+
+  // Initial display
+  showSlide(currentSlide);
+</script>
+
+
+</body>
+</html>

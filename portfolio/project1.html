@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Portal for Refurbished Electronics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="project-detail">
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+    <h1>Online Portal for Refurbished Electronics</h1>
+
+    <div class="slideshow-container">
+
+  <div class="slide fade">
+    <img src="project11.webp" alt="Slide 1">
+  </div>
+
+  <div class="slide fade">
+    <img src="project12.webp" alt="Slide 2">
+  </div>
+
+  <div class="slide fade">
+    <img src="project13.webp" alt="Slide 3">
+  </div>
+
+  <div class="slide fade">
+    <img src="project14.webp" alt="Slide 3">
+  </div>
+
+  <div class="slide fade">
+    <img src="project15.webp" alt="Slide 3">
+  </div>
+
+  <div class="slide fade">
+    <img src="project16.webp" alt="Slide 3">
+  </div>
+
+  <div class="slide fade">
+    <img src="project17.webp" alt="Slide 3">
+  </div>
+
+  <div class="slide fade">
+    <img src="project17.webp" alt="Slide 3">
+  </div>
+
+  <div class="slide fade">
+    <img src="project18.webp" alt="Slide 3">
+  </div>
+
+  <div class="slide fade">
+    <img src="project19.webp" alt="Slide 3">
+  </div>
+
+  <div class="slide fade">
+    <img src="project110.webp" alt="Slide 3">
+  </div>
+
+  <div class="slide fade">
+    <img src="project111.webp" alt="Slide 3">
+  </div>
+  
+
+  <!-- Navigation -->
+  <a class="prev" onclick="changeSlide(-1)">❮</a>
+  <a class="next" onclick="changeSlide(1)">❯</a>
+
+</div>
+
+
+   <div class="project-description">
+      <p>
+    The Online Portal for Refurbished Electronics is a web-based e-commerce platform designed to facilitate the buying and selling of refurbished or second-hand electronic devices. The portal provides users with a seamless experience for browsing, purchasing, and selling various electronic products. It includes features such as user registration, product listings, secure payment processing, and customer reviews. The platform aims to promote sustainability by encouraging the reuse of electronics while providing users with access to quality refurbished products at competitive prices. The project uses PHP for buissness logic and MySQL for database.
+    </p>
+  </div><div class="project-description-tech">
+  <h0>Technologies Used:</h0>
+   <h1>Languages:</h1>
+    <h2><ul>
+      <li>PHP</li>
+      <li>MySQL</li>
+      <li>HTML/CSS</li>
+      <li>JavaScript</li>
+    </ul></h2>
+    <h1>Tools/Frameworks:</h1>
+    <h2><ul>
+      <li>XAMPP</li>
+      <li>Bootstrap</li>
+    </ul></h2>
+  <h1>Team Members:</h1>
+    <h2>Allan S Joseph , Shefna S
+    </h2>
+
+      </div>
+    <a href="https://github.com/Aryasreesunil/online-portal-for-refurbrished-electronics" target="_blank" class="btn">View on GitHub</a>
+  </section>
+
+
+  <script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".slide");
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      if (i === index) slide.classList.add("active");
+    });
+  }
+
+  function changeSlide(direction) {
+    currentSlide += direction;
+    if (currentSlide < 0) currentSlide = slides.length - 1;
+    if (currentSlide >= slides.length) currentSlide = 0;
+    showSlide(currentSlide);
+  }
+
+  // Initial display
+  showSlide(currentSlide);
+</script>
+
+
+</body>
+</html>

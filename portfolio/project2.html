@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medicine Reminder Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="project-detail">
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+    <h1>Medicine Reminder Application</h1>
+
+    <div class="slideshow-container">
+
+  <div class="slide fade">
+    <img src="1.png" alt="Slide 1">
+  </div>
+
+  <div class="slide fade">
+    <img src="2.png" alt="Slide 2">
+  </div>
+
+  <div class="slide fade">
+    <img src="3.png" alt="Slide 3">
+  </div>
+
+  
+  <!-- Navigation -->
+  <a class="prev" onclick="changeSlide(-1)">❮</a>
+  <a class="next" onclick="changeSlide(1)">❯</a>
+
+</div>
+
+
+   <div class="project-description">
+      <p> The Medicine Reminder App is an Android-based mobile application developed to help users manage their daily medication schedules and hydration goals effectively. The app allows users to register, log in, and securely manage personal health routines. It enables users to add medications with essential details such as name, dosage, frequency, and instructions, and to set up timely reminders for each dose. Users can mark medications as “Taken” or “Missed,” and view their medication history for better tracking. The app also includes features for setting daily water intake goals and receiving hydration reminders. Built using Android Studio and SQLite, the application ensures a lightweight, offline-capable, and user-friendly experience that encourages healthy habits and adherence to treatment plans.
+      </p>
+  </div><div class="project-description-tech">
+  <h0>Technologies Used:</h0>
+   <h1>Languages:</h1>
+    <h2><ul>
+      <li>Java/Kotlin </li>
+      <li>XML</li>
+    
+    </ul></h2>
+    <h1>Frameworks, Libraries, and Tools:</h1>
+    <h2><ul>
+      <li>Android SDK </li>
+      <li>Android Studio</li>
+      <li>SQLite </li>
+      <li>NotificationManager </li>
+
+    </ul></h2>
+  <h1>Team Members:</h1>
+    <h2>MOHAMMED LAHAN P S , NASEEM SABAH A P , ABIN MOHAMMED 
+    </h2>
+
+      </div>
+    <a href="https://github.com/Aryasreesunil/medicine-reminder-app" target="_blank" class="btn">View on GitHub</a>
+  </section>https
+
+
+  <script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".slide");
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      if (i === index) slide.classList.add("active");
+    });
+  }
+
+  function changeSlide(direction) {
+    currentSlide += direction;
+    if (currentSlide < 0) currentSlide = slides.length - 1;
+    if (currentSlide >= slides.length) currentSlide = 0;
+    showSlide(currentSlide);
+  }
+
+  // Initial display
+  showSlide(currentSlide);
+</script>
+
+
+</body>
+</html>
